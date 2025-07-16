@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>RF Events Planner</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html" class="nav__logo">
+          <img src="./media/Atelier.png" alt="RF Logo" />
+        </a>
+        <ul>
+          <li><a href="#">Contact Sales</a></li>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Find Tickets</a></li>
+          <li><a href="./admin-page.html">Admin</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="tickets-label">
+      <div class="main-container">
+        <div class="nav-banner-wrap">
+          <div class="nav-title">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum congue justo porttitor, rutrum tellus a, iaculis ipsum.
+            </p>
+            <div class="nav-timer">
+              <i class="fa-solid fa-clock"></i>Timer:
+              <span>20 Min</span>
+            </div>
+          </div>
+          <div class="nav-details">
+            <div class="content-dateloc">
+              <div>
+                <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+              </div>
+              <span>Wednesday, July 30, 2025 - 11:30PM Sunday</span>
+            </div>
+            <div class="content-dateloc">
+              <div><i class="fa-solid fa-location-dot"></i></div>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum congue justo porttitor, rutrum tellus a, iaculis
+                ipsum.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nf-stages">
+      <div class="nf-wrapper">
+        <div class="nf-stage active">
+          <span><i class="fa-solid fa-ticket"></i>Tickets</span>
+        </div>
+        <div class="nf-stage active">
+          <span><i class="fa-solid fa-cart-shopping"></i>Details</span>
+        </div>
+        <div class="nf-stage active">
+          <span><i class="fa-solid fa-flag-checkered"></i>Finished</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-container">
+      <div class="custom-row completion">
+        <div class="custom-column">
+          <p class="section-title">Billing Information</p>
+          <div class="billing-grid">
+            <div>
+              <label for="">First Name:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Last Name:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Email:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Mobile:</label>
+              <input type="text" />
+            </div>
+            <div class="span-2">
+              <input id="subs" type="checkbox" />
+              <label for="subs">
+                Subscribed to updates about future events
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="custom-column">
+          <p class="section-title alt">Ordered Tickets</p>
+          <div class="ordered-item">
+            <div class="ordered-item-d">
+              <p class="item-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="item-sched">
+                <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                Wednesday, July 30, 2025 - 11:30 PM Sunday
+              </div>
+            </div>
+            <div class="item-qp">
+              <p><span>Quantity:</span> 3</p>
+              <p><span>Price:</span>£ 1050.00 + £ 210.00 VAT</p>
+            </div>
+          </div>
+          <div class="ordered-item">
+            <div class="ordered-item-d">
+              <p class="item-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="item-sched">
+                <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                Wednesday, July 30, 2025 - 11:30 PM Sunday
+              </div>
+            </div>
+            <div class="item-qp">
+              <p><span>Quantity:</span> 3</p>
+              <p><span>Price:</span>£ 1050.00 + £ 210.00 VAT</p>
+            </div>
+          </div>
+          <div class="tp-wrap">
+            <div class="subtotal-tb">
+              <label for="">Total + VAT</label>
+              <input type="text" value="£ 1600.00" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thank-you">
+      <p>
+        BOOKING COMPLETE! YOU WILL RECEIVE AN EMAIL IN ANY MINUTE NOW! THANKS!
+      </p>
+    </div>
+
+    <div class="nav-btns">
+      <a href="./Nav2_Details.html">
+        <i class="fa-solid fa-door-open"></i> Exit
+      </a>
+    </div>
+
+    <footer>
+      <div class="main-container">
+        <div class="footer-content">
+          <span>© 2025 Ribbonfish Ltd</span>
+          <div class="powered-by">
+            <span>Powered by:</span>
+            <img src="./media/rf-black-logo.png" alt="Ribbonfish" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/65e82f8b2f.js"></script>
+  <script src="./scripts.js"></script>
+</html>

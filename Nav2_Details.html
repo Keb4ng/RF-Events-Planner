@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>RF Events Planner</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html" class="nav__logo">
+          <img src="./media/Atelier.png" alt="RF Logo" />
+        </a>
+        <ul>
+          <li><a href="#">Contact Sales</a></li>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Find Tickets</a></li>
+          <li><a href="./admin-page.html">Admin</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="tickets-label">
+      <div class="main-container">
+        <div class="nav-banner-wrap">
+          <div class="nav-title">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum congue justo porttitor, rutrum tellus a, iaculis ipsum.
+            </p>
+            <div class="nav-timer">
+              <i class="fa-solid fa-clock"></i>Timer:
+              <span>20 Min</span>
+            </div>
+          </div>
+          <div class="nav-details">
+            <div class="content-dateloc">
+              <div>
+                <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+              </div>
+              <span>Wednesday, July 30, 2025 - 11:30PM Sunday</span>
+            </div>
+            <div class="content-dateloc">
+              <div><i class="fa-solid fa-location-dot"></i></div>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum congue justo porttitor, rutrum tellus a, iaculis
+                ipsum.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nf-stages">
+      <div class="nf-wrapper">
+        <div class="nf-stage active">
+          <span><i class="fa-solid fa-ticket"></i>Tickets</span>
+        </div>
+        <div class="nf-stage active">
+          <span><i class="fa-solid fa-cart-shopping"></i>Details</span>
+        </div>
+        <div class="nf-stage">
+          <span><i class="fa-solid fa-flag-checkered"></i>Finished</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-container">
+      <div class="custom-row details-info">
+        <div class="custom-column">
+          <p class="section-title">Billing Information</p>
+          <div class="billing-grid">
+            <div>
+              <label for="">First Name:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Last Name:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Email:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">Mobile:</label>
+              <input type="text" />
+            </div>
+            <div class="span-2">
+              <input id="subs" type="checkbox" />
+              <label for="subs">
+                Subscribed to updates about future events
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="custom-column">
+          <p class="section-title alt">Ordered Tickets</p>
+          <div class="ticket-list"></div>
+          <div class="tp-wrap ticket-summary">
+            <div class="subtotal-tb">
+              <label for="">Total + VAT</label>
+              <div class="subtotal-value">£ 0.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="billing-form"></div>
+    </div>
+
+    <section class="payment-section">
+      <div class="main-container">
+        <p class="section-title">Payment Options</p>
+        <a href="./Nav3_Complete.html" class="pay-btn">PAY NOW</a>
+        <p><b>Guaranteed safe and secure check out:</b></p>
+        <div>
+          <img src="./media/pay-logos.png" alt="" />
+          <img src="./media/pay-logos2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="nav-btns">
+      <a href="./Nav1_Tickets.html">
+        <i class="fa-solid fa-backward-step"></i> Prev
+      </a>
+    </div>
+
+    <footer>
+      <div class="main-container">
+        <div class="footer-content">
+          <span>© 2025 Ribbonfish Ltd</span>
+          <div class="powered-by">
+            <span>Powered by:</span>
+            <img src="./media/rf-black-logo.png" alt="Ribbonfish" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/65e82f8b2f.js"></script>
+  <script src="./scripts.js"></script>
+</html>
