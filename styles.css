@@ -970,6 +970,12 @@ footer {
   font-size: 2rem;
 }
 
+.failed-message em {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
 .success-message {
   background-color: #4b8869;
   padding: 0.5rem;
@@ -984,6 +990,27 @@ footer {
 
 .success-message i {
   font-size: 2rem;
+}
+
+.pn-btn {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--c-secondary);
+  color: white;
+  border: solid 1px var(--c-secondary);
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: auto;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.pn-btn:hover {
+  background-color: var(--c-primary);
+  color: white;
+  border: solid 1px var(--c-primary);
 }
 
 @media only screen and (max-width: 991px) {

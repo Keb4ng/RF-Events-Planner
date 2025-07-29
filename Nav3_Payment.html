@@ -92,7 +92,8 @@
             </div>
             <div class="payment-col">
               <p>Payment Terms:</p>
-              <div class="payment-terms-opt">
+              <input type="text" />
+              <!-- <div class="payment-terms-opt">
                 <label for="gpay">
                   <input type="radio" id="gpay" name="payment" />
                   <img src="./media/gpay.png" alt="Google Pay" />
@@ -122,10 +123,28 @@
                   <input type="radio" id="visa" name="payment" />
                   <img src="./media/visa.png" alt="Visa" />
                 </label>
-              </div>
+              </div> -->
             </div>
             <div class="payment-col">
-              <p>Card ID:</p>
+              <p>Status:</p>
+              <input
+                class="payment-failed"
+                type="text"
+                disabled
+                placeholder="Failed"
+              />
+            </div>
+            <div class="payment-col">
+              <p>Status:</p>
+              <input
+                class="payment-success"
+                type="text"
+                disabled
+                placeholder="Successful"
+              />
+            </div>
+            <div class="payment-col">
+              <p>Cart ID:</p>
               <input type="text" />
             </div>
             <div class="payment-col">
@@ -144,8 +163,28 @@
               <p>Your Post Code:</p>
               <input type="text" />
             </div>
+            <div class="payment-col">
+              <button class="pn-btn">Pay Now</button>
+            </div>
           </div>
           <!-- payment grid  -->
+          <p class="failed-message">
+            <i class="fa-solid fa-ban"></i>
+            <em>
+              <span
+                >Were sorry, there seems to have been an issue with your
+                payment.</span
+              >
+              <span
+                >Please try again or contact us for assistance 999-999
+                atelier@gmail.com</span
+              >
+            </em>
+          </p>
+          <p class="success-message">
+            <i class="fa-solid fa-check-double"></i>
+            Thank you! Your payment was successful.
+          </p>
         </div>
       </div>
     </div>
@@ -155,7 +194,7 @@
         ><i class="fa-solid fa-backward-step"></i> Prev</a
       >
       <a href="./Nav4_Complete.html"
-        >Pay Now <i class="fa-solid fa-forward-step" id="continueBtn"></i
+        >Continue <i class="fa-solid fa-forward-step" id="continueBtn"></i
       ></a>
     </div>
 
