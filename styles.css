@@ -784,7 +784,7 @@ footer {
   width: 90%;
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -879,6 +879,113 @@ footer {
   accent-color: var(--c-secondary);
 }
 
+/* payment section */
+
+.payment-terms-opt {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.payment-terms-opt input[type="radio"] {
+  display: none;
+}
+
+.payment-terms-opt input[type="radio"]:checked + img {
+  border: 2px solid var(--c-primary);
+  border-radius: 8px;
+}
+
+.payment-terms-opt label {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.payment-terms-opt img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+}
+
+.payment-col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.payment-col p {
+  width: 100%;
+  max-width: 200px;
+  font-weight: 500;
+}
+
+.payment-col input[type="text"] {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 0 1rem;
+  border: 0;
+  font-size: 1rem;
+  border: solid 1px #242424;
+  border-radius: 5px;
+}
+
+.payment-failed::placeholder,
+.payment-success::placeholder {
+  color: white !important;
+}
+
+.payment-col input[type="text"]::placeholder {
+  color: #242424;
+}
+
+.payment-failed {
+  background-color: #a82e2e;
+  color: white;
+}
+
+.payment-success {
+  background-color: #4b8869;
+}
+
+.failed-message {
+  background-color: #a82e2e;
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.failed-message i {
+  font-size: 2rem;
+}
+
+.success-message {
+  background-color: #4b8869;
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.success-message i {
+  font-size: 2rem;
+}
+
 @media only screen and (max-width: 991px) {
   header {
     display: none;
@@ -922,6 +1029,11 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+  .payment-col {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
   .ticket-option {
     gap: 1rem;
     flex-direction: column;

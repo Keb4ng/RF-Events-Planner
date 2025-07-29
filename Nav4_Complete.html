@@ -73,6 +73,9 @@
           <span><i class="fa-solid fa-cart-shopping"></i>Details</span>
         </div>
         <div class="nf-stage active">
+          <span> <i class="fa-solid fa-credit-card"></i> Payment</span>
+        </div>
+        <div class="nf-stage active">
           <span><i class="fa-solid fa-flag-checkered"></i>Finished</span>
         </div>
       </div>
@@ -106,6 +109,100 @@
               </label>
             </div>
           </div>
+        </div>
+        <div class="custom-column">
+          <p class="section-title">Payment Information</p>
+          <div class="payment-grid">
+            <div class="payment-col">
+              <p>Payment Amount:</p>
+              <input type="text" disabled value="£1600" />
+            </div>
+            <div class="payment-col">
+              <p>Payment Terms:</p>
+              <div class="payment-terms-opt">
+                <label for="gpay">
+                  <input type="radio" id="gpay" name="payment" checked />
+                  <img src="./media/gpay.png" alt="Google Pay" />
+                </label>
+
+                <label for="paypal">
+                  <input type="radio" id="paypal" name="payment" />
+                  <img src="./media/paypal.png" alt="PayPal" />
+                </label>
+
+                <label for="amex">
+                  <input type="radio" id="amex" name="payment" />
+                  <img src="./media/amex.png" alt="SAmex" />
+                </label>
+
+                <label for="applepay">
+                  <input type="radio" id="applepay" name="payment" />
+                  <img src="./media/applepay.png" alt="Apple Pay" />
+                </label>
+
+                <label for="mastercard">
+                  <input type="radio" id="mastercard" name="payment" />
+                  <img src="./media/mastercard.png" alt="Mastercard" />
+                </label>
+
+                <label for="visa">
+                  <input type="radio" id="visa" name="payment" />
+                  <img src="./media/visa.png" alt="Visa" />
+                </label>
+              </div>
+            </div>
+            <div class="payment-col">
+              <p>Payment Status:</p>
+              <input
+                class="payment-failed"
+                type="text"
+                disabled
+                placeholder="Failed"
+              />
+            </div>
+            <div class="payment-col">
+              <p>Payment Status:</p>
+              <input
+                class="payment-success"
+                type="text"
+                disabled
+                placeholder="Successful"
+              />
+            </div>
+            <div class="payment-col">
+              <p>Card ID:</p>
+              <input type="text" disabled placeholder="11112222233334444" />
+            </div>
+            <div class="payment-col">
+              <p>Transaction Number:</p>
+              <input type="text" disabled placeholder="44443333222221111" />
+            </div>
+            <div class="payment-col">
+              <p>Description:</p>
+              <input
+                type="text"
+                disabled
+                placeholder="Non Refundable app Review Fee"
+              />
+            </div>
+            <div class="payment-col">
+              <p>Your Email:</p>
+              <input type="text" disabled placeholder="Test@gmail.com" />
+            </div>
+            <div class="payment-col">
+              <p>Your Post Code:</p>
+              <input type="text" disabled placeholder="OX12BU" />
+            </div>
+          </div>
+          <p class="failed-message">
+            <i class="fa-solid fa-ban"></i>
+            Were sorry, there seems to have been an issue with your payment.
+          </p>
+          <p class="success-message">
+            <i class="fa-solid fa-check-double"></i>
+            Thank you! Your payment was successful.
+          </p>
+          <!-- payment grid  -->
         </div>
         <div class="custom-column">
           <p class="section-title alt">Ordered Tickets</p>
@@ -156,9 +253,7 @@
     </div>
 
     <div class="nav-btns">
-      <a href="./Nav2_Details.html">
-        <i class="fa-solid fa-door-open"></i> Exit
-      </a>
+      <a href="./index.html"> <i class="fa-solid fa-door-open"></i> Exit </a>
     </div>
 
     <footer>

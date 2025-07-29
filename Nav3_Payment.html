@@ -72,7 +72,7 @@
         <div class="nf-stage active">
           <span><i class="fa-solid fa-cart-shopping"></i>Details</span>
         </div>
-        <div class="nf-stage">
+        <div class="nf-stage active">
           <span> <i class="fa-solid fa-credit-card"></i> Payment</span>
         </div>
         <div class="nf-stage">
@@ -82,69 +82,80 @@
     </section>
 
     <div class="main-container">
-      <div class="custom-row details-info">
+      <div class="custom-row completion">
         <div class="custom-column">
-          <p class="section-title">Billing Information</p>
-          <div class="billing-grid">
-            <div>
-              <label for="">First Name:</label>
+          <p class="section-title">Payment Information</p>
+          <div class="payment-grid">
+            <div class="payment-col">
+              <p>Payment Amount:</p>
               <input type="text" />
             </div>
-            <div>
-              <label for="">Last Name:</label>
+            <div class="payment-col">
+              <p>Payment Terms:</p>
+              <div class="payment-terms-opt">
+                <label for="gpay">
+                  <input type="radio" id="gpay" name="payment" />
+                  <img src="./media/gpay.png" alt="Google Pay" />
+                </label>
+
+                <label for="paypal">
+                  <input type="radio" id="paypal" name="payment" />
+                  <img src="./media/paypal.png" alt="PayPal" />
+                </label>
+
+                <label for="amex">
+                  <input type="radio" id="amex" name="payment" />
+                  <img src="./media/amex.png" alt="SAmex" />
+                </label>
+
+                <label for="applepay">
+                  <input type="radio" id="applepay" name="payment" />
+                  <img src="./media/applepay.png" alt="Apple Pay" />
+                </label>
+
+                <label for="mastercard">
+                  <input type="radio" id="mastercard" name="payment" />
+                  <img src="./media/mastercard.png" alt="Mastercard" />
+                </label>
+
+                <label for="visa">
+                  <input type="radio" id="visa" name="payment" />
+                  <img src="./media/visa.png" alt="Visa" />
+                </label>
+              </div>
+            </div>
+            <div class="payment-col">
+              <p>Card ID:</p>
               <input type="text" />
             </div>
-            <div>
-              <label for="">Email:</label>
+            <div class="payment-col">
+              <p>Transaction Number:</p>
               <input type="text" />
             </div>
-            <div>
-              <label for="">Mobile:</label>
+            <div class="payment-col">
+              <p>Description:</p>
               <input type="text" />
             </div>
-            <div class="span-2">
-              <input id="subs" type="checkbox" />
-              <label for="subs">
-                Subscribed to updates about future events
-              </label>
+            <div class="payment-col">
+              <p>Your Email:</p>
+              <input type="text" />
+            </div>
+            <div class="payment-col">
+              <p>Your Post Code:</p>
+              <input type="text" />
             </div>
           </div>
-        </div>
-        <div class="custom-column">
-          <p class="section-title alt">Ordered Tickets</p>
-          <div class="ticket-list"></div>
-          <div class="tp-wrap ticket-summary">
-            <div class="subtotal-tb">
-              <label for="">Total + VAT</label>
-              <div class="subtotal-value">£ 0.00</div>
-            </div>
-          </div>
+          <!-- payment grid  -->
         </div>
       </div>
     </div>
-
-    <div class="main-container">
-      <div class="billing-form"></div>
-    </div>
-
-    <section class="payment-section">
-      <div class="main-container">
-        <p class="section-title">Payment Options</p>
-        <!-- <a href="./Nav3_Payment.html" class="pay-btn">PAY NOW</a> -->
-        <p><b>Guaranteed safe and secure check out:</b></p>
-        <div>
-          <img src="./media/pay-logos.png" alt="" />
-          <img src="./media/pay-logos2.png" alt="" />
-        </div>
-      </div>
-    </section>
 
     <div class="nav-btns">
-      <a href="./Nav1_Tickets.html"
+      <a href="./Nav2_Details.html"
         ><i class="fa-solid fa-backward-step"></i> Prev</a
       >
-      <a href="./Nav3_Payment.html"
-        >Continue <i class="fa-solid fa-forward-step" id="continueBtn"></i
+      <a href="./Nav4_Complete.html"
+        >Pay Now <i class="fa-solid fa-forward-step" id="continueBtn"></i
       ></a>
     </div>
 
